@@ -16,6 +16,8 @@ import { msg, t } from '../i18n/index.js';
 // and Los Angeles, which voice results name for the analyst's region scopes.
 const PLACE_NAME_KEYS = new Map(
   [
+    msg('Accra'),
+    msg('Kumasi'),
     msg('Austin'),
     msg('San Francisco'),
     msg('New York'),

@@ -243,7 +243,7 @@ export class IntelHUD {
     };
 
     // Session-consistent pseudorandom identifiers (generated once at construction)
-    this._missionId = `KH11-${4000 + Math.floor(Math.random() * 200)}`;
+    this._missionId = `GEV-GH-${4000 + Math.floor(Math.random() * 200)}`;
     this._sensorId = `OPS-${4100 + Math.floor(Math.random() * 100)}`;
     this._orbitNum = 47000 + Math.floor(Math.random() * 1000);
     this._passNum = 100 + Math.floor(Math.random() * 200);
@@ -267,7 +267,7 @@ export class IntelHUD {
       <div class="hud-sonar" aria-hidden="true"></div>
 
       <div class="hud-top-bar">
-        <span class="hud-top-bar-left">TOP SECRET // SI-TK // NOFORN</span>
+        <span class="hud-top-bar-left">OPEN DATA // GHANA // UNCLASSIFIED</span>
         <span class="hud-top-bar-center">${this._missionId}</span>
         <span class="hud-top-bar-right">PAGE 1/1</span>
       </div>
@@ -275,7 +275,7 @@ export class IntelHUD {
       <div class="hud-corner hud-top-left">
         <div class="hud-bracket">┌</div>
         <div class="hud-content">
-          <div class="hud-classification">TOP SECRET // SI-TK // NOFORN</div>
+          <div class="hud-classification">OPEN DATA // GHANA // UNCLASSIFIED</div>
           <div class="hud-system">${this._missionId}  ${this._sensorId}</div>
           <div class="hud-mode" id="hud-mode">${t(MODE_LABELS.normal)}</div>
           <div class="hud-summary-wrap">

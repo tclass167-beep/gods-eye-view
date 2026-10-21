@@ -1,5 +1,5 @@
 {
-  "Flying to Austin, TX...": "Перелёт в Остин, Техас...",
+  "Flying to Accra, Ghana...": "Перелёт в Аккру, Гана...",
   "Restoring shared view...": "Восстановление общего вида...",
   "Initializing systems...": "Инициализация систем...",
   "Configuring viewer...": "Настройка просмотрщика...",
@@ -2761,6 +2761,8 @@
   "TomTom roads first; OpenStreetMap fills the rest, simulated": "Сначала дороги TomTom; остальное дополняет OpenStreetMap с симуляцией потока",
   "TomTom roads first; OpenStreetMap fills the rest, simulated (needs a TomTom key)": "Сначала дороги TomTom; остальное дополняет OpenStreetMap с симуляцией потока (нужен ключ TomTom)",
   "Austin": "Остин",
+  "Accra": "Аккра",
+  "Kumasi": "Кумаси",
   "San Francisco": "Сан-Франциско",
   "New York": "Нью-Йорк",
   "Tokyo": "Токио",

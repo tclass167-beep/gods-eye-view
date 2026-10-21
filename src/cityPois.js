@@ -15,6 +15,116 @@
  *   buildingHeight — estimated height of landmark center above ground (meters)
  */
 export const CITY_POIS = {
+  accra: {
+    name: 'Accra',
+    groundElevation: 40, // meters above WGS84 ellipsoid
+    viewBounds: {
+      southwest: { lat: 5.5, lng: -0.3 },
+      northeast: { lat: 5.7, lng: -0.05 },
+    },
+    pois: [
+      {
+        name: 'Black Star Square',
+        lat: 5.5494,
+        lon: -0.1927,
+        alt: 550,
+        pitch: -28,
+        heading: 0,
+        buildingHeight: 20,
+      },
+      {
+        name: 'Kwame Nkrumah Mausoleum',
+        lat: 5.5468,
+        lon: -0.2007,
+        alt: 500,
+        pitch: -25,
+        heading: 45,
+        buildingHeight: 25,
+      },
+      {
+        name: 'Jubilee House',
+        lat: 5.5869,
+        lon: -0.1854,
+        alt: 550,
+        pitch: -25,
+        heading: 180,
+        buildingHeight: 30,
+      },
+      {
+        name: 'Osu Castle',
+        lat: 5.5455,
+        lon: -0.177,
+        alt: 500,
+        pitch: -25,
+        heading: 200,
+        buildingHeight: 15,
+      },
+      {
+        name: 'Accra Sports Stadium',
+        lat: 5.5513,
+        lon: -0.1916,
+        alt: 550,
+        pitch: -30,
+        heading: 90,
+        buildingHeight: 30,
+      },
+    ],
+  },
+  kumasi: {
+    name: 'Kumasi',
+    groundElevation: 260, // meters above WGS84 ellipsoid
+    viewBounds: {
+      southwest: { lat: 6.6, lng: -1.72 },
+      northeast: { lat: 6.78, lng: -1.5 },
+    },
+    pois: [
+      {
+        name: 'Manhyia Palace',
+        lat: 6.705,
+        lon: -1.615,
+        alt: 500,
+        pitch: -25,
+        heading: 180,
+        buildingHeight: 15,
+      },
+      {
+        name: 'Kejetia Market',
+        lat: 6.6981,
+        lon: -1.6236,
+        alt: 600,
+        pitch: -30,
+        heading: 45,
+        buildingHeight: 20,
+      },
+      {
+        name: 'KNUST Great Hall',
+        lat: 6.6745,
+        lon: -1.5716,
+        alt: 500,
+        pitch: -25,
+        heading: 90,
+        buildingHeight: 25,
+      },
+      {
+        name: 'Baba Yara Stadium',
+        lat: 6.6836,
+        lon: -1.6094,
+        alt: 550,
+        pitch: -30,
+        heading: 0,
+        buildingHeight: 30,
+      },
+      {
+        name: 'Kumasi Fort',
+        lat: 6.6922,
+        lon: -1.6256,
+        alt: 450,
+        pitch: -25,
+        heading: 135,
+        buildingHeight: 10,
+      },
+    ],
+  },
   austin: {
     name: 'Austin',
     groundElevation: 150, // meters above WGS84 ellipsoid

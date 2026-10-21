@@ -80,3 +80,35 @@ export function flyToAustin(viewer) {
     if (!viewer.isDestroyed()) viewer.camera.cancelFlight();
   };
 }
+
+/**
+ * Default arrival for the Ghana regional pack: Black Star Square, Accra.
+ * Same two-stage fly-in as flyToAustin so the startup test contract holds.
+ */
+export function flyToAccra(viewer) {
+  viewer.camera.setView({
+    destination: Cesium.Cartesian3.fromDegrees(-0.1927, 5.5494, 25000),
+    orientation: {
+      heading: Cesium.Math.toRadians(0),
+      pitch: Cesium.Math.toRadians(-90),
+      roll: 0.0,
+    },
+  });
+
+  const timer = setTimeout(() => {
+    if (viewer.isDestroyed()) return;
+    viewer.camera.flyTo({
+      destination: Cesium.Cartesian3.fromDegrees(-0.1927, 5.5494, 600),
+      orientation: {
+        heading: Cesium.Math.toRadians(15),
+        pitch: Cesium.Math.toRadians(-30),
+        roll: 0.0,
+      },
+      duration: 4.0,
+      easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT,
+    });
+  }, 500);
+  return () => {
+    clearTimeout(timer);
+  };
+}
